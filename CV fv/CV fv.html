@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #c9e4ff, #ffffff);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #3498db;
+            color: white;
+            padding: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        h1, h2 {
+            margin: 0;
+            font-weight: 700;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+        }
+
+        section {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+		
+		u {
+            text-decoration: underline;
+			margin-left: 5%;
+        }
+
+        .education, .experience, .skills {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .references {
+            background: #f4f4f4;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .icons {
+            color: #3498db;
+        }
+
+        select {
+            padding: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+		.dc {
+		margin-left: 10%;
+		}
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Matthieu LE BER</h1>
+            <h2>Curriculum Vitae</h2>
+        </div>
+        <div>
+			<select id="langSelect" onchange="changeLanguage()">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="Formation">
+        <h2 id="educationTitle">Éducation</h2>
+        <ul>
+            <li id="edu1"><strong>Erasmsus septembre 2023 - janvier 2024</strong> - Université Yasar</li>
+			
+			
+				<u id="part1"><strong>Matières préférées :</strong></u>
+					<p class="dc" id="info11">Programme linéaire</p>
+					<p class="dc" id="info12">Théorie des probabilités et processus stochastiques</p>
+					<p class="dc" id="info13">Systèmes derreur et daide à la décision</p>
+					<p class="dc" id="info14">Sujet actuel en ingénieure daffaires </p>
+			
+
+            <li id="edu2"><strong>Diplôme dingénieur en spécialité génie industriel 2021-2024</strong> - École dIngénieur du Littoral Côté dOpale à Longuenesse (62)</li>
+				<u id="part21"><strong>Matières préférées :</strong></u>
+					<p class="dc" id="info211">Cours de droits (travail, entreprise et propriété intellectuelle)</p>
+					<p class="dc" id="info212">Cours de management (projet, équipe, entreprise)</p>
+					<p class="dc" id="info213">Cours de gestion de production</p>
+					<p class="dc" id="info214">Cours de construction mécanique</p>
+				<u id="part22"><strong>Réalisation dun projet solidaire :</strong></u>
+					<p class="dc" id="info221">Organisation du défilé de mode du magasin "Chez Henry" de la croix rouge</p>
+					<p class="dc" id="info222">Recherche de mannequin et de sponsors</p>
+					<p class="dc" id="info223">Recherche de salle</p>
+					<p class="dc" id="info224">Recherche de thèmes</p>
+				<u id="part23"><strong>Trésorier au Bureau des élèves :</strong></u>
+					<p class="dc" id="info231">Gestions des paiements des activités et des TOEICS</p>
+					<p class="dc" id="info232">Gestion des inscriptions</p>
+					<p class="dc" id="info233">Organisateur des soirées du BDE et des activités à lécole.</p>
+				<u id="part24"><strong>Secrétaire du club "Les Invincus" :</strong></u><br><br>
+					<u id="info 241">Lintérêt du club est de faire découvrir le terroir de la région Pas-de-Calais</u>
+					<p class="dc" id="info242">Organisateur d'activités</p>
+					<p class="dc" id="info243">Gestion des inscriptions</p>
+				
+			<li id="edu3"><strong>Classe préparatoire TSI (Technologies et Sciences Industrielles) 2018-2021</strong> - Lycée Marcel Sambat, Sotteville-lès-Rouen (76)</li><br>
+			
+			<li id="edu4"><strong>Baccalauréat STIDD (Sciences et Techniques de lIndustries et du Développement Durable) 2018</strong> - Lycée Guy de Maupassant Fécamp (76)</li>
+			<u id="part4"><strong>Projet darchitecture et construction ::</strong></u>
+				<p class="dc" id="info41">Améliorer lisolation du lycée</p>
+				<p class="dc" id="info42">Regarder lisolation du lycée</p>
+				<p class="dc" id="info43">Regarder les principales pertes de chaleur</p>
+        </ul>
+    </section>
+
+    <section class="experience">
+        <h2 id="experienceTitle"> Expérience Professionnelle</h2>
+        <ul>
+            <li>
+                <li id="work1"><strong>Delpierre Août 2021 (1mois), Été 2019 (2mois) & Été 2023 (3mois) - Saisonnie</strong></li>
+				
+                <ul>
+					<u id="post1"><strong>Intérimaire:</strong></u>
+                    <p class="dc" id="act11">Emballage</p>
+					<p class="dc" id="act12">Pesée du hareng</p>
+					<p class="dc" id="act13">Ficelage</p>
+					<p class="dc" id="act14">Trancheur</p>
+                </ul>
+            </li>
+            <li>
+                <li id="work1"><strong>Radio "Art en sort" Été 2018 (4mois) - Animateur radio bénévole</strong></li>
+                <ul>
+					<u id="post2"><strong>Chroniqueur sur une radio locale:</strong></u>
+                    <p class="dc" id="act21">Lecture des publicités</p>
+					<p class="dc" id="act22">Voix des jingles</p>
+					<p class="dc" id="act23">Chroniqueur de débat sur les sujets du quotidien</p>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="skills">
+        <h2 id="skillsTitle">Compétences</h2>
+        <ul>
+            <li id="skill1"><strong>Langages de Programmation:</strong> HTML, CSS, SQL, C</li>
+            <li id="skill2"><strong>Construction 3D:</strong> Catia V6, Solidworks</li>
+            <li id="skill3"><strong>Langues:</strong> Français (courant), Anglais (intermédiaire), Italien (débutant)</li>
+        </ul>
+    </section>
+
+    <section class="references">
+        <h2 id="CITitle">Centre dintérêt</h2>
+        <ul>
+			<u id="CI1"><strong>Jeux de société:</strong></u>
+				<p class="dc" id="game1">Jeu de plateau</p>
+				<p class="dc" id="game2">Jeu stratégique</p>
+				<p class="dc" id="game3">Seul ou en coopératif</p>
+				
+			<uid="CI2"><strong>Handball:</strong></u>
+				<p class="dc" id="H1">Pratique en club entre 2012 et 2018</p>
+				<p class="dc" id="H2">Poste : pivot</p>
+				<p class="dc" id="H3">Arbitre (sans diplôme) sur matchs de district -15ans</p>		
+		</ul>
+    </section>
+
+    <footer style="text-align: center; padding: 10px;">
+        <p>Made with <i class="icons fas fa-heart"></i> by [Matthieu LE BER]</p>
+    </footer>
+	
+	
+	    <script>
+        function changeLanguage() {
+            const langSelect = document.getElementById('langSelect').value;
+
+            // Objets de texte pour les deux langues
+            const langText = {
+                fr: {
+                    educationTitle:'Éducation',
+                    edu1:'<strong>Erasmsus septembre 2023 - janvier 2024</strong> - Université Yasar',
+					part1:'<strong>Matières préférées :</strong>',
+					info11:'Programme linéaire',
+					info12:'Théorie des probabilités et processus stochastiques',
+					info13:'Systèmes derreur et daide à la décision',
+					info14:'Sujet actuel en ingénieure daffaires',
+                    edu2:'<strong>Diplôme dingénieur en spécialité génie industriel 2021-2024</strong> - École dIngénieur du Littoral Côté dOpale à Longuenesse (62)',
+					part21:'<strong>Matières préférées :</strong>',
+					info211:'Cours de droits (travail, entreprise et propriété intellectuelle)',
+					info212:'Cours de management (projet, équipe, entreprise)',
+					info213:'Cours de gestion de production',
+					info214:'Cours de construction mécanique',
+					part22:'<strong>Réalisation dun projet solidaire :</strong>',
+					info221:'Organisation du défilé de mode du magasin "Chez Henry" de la croix rouge',
+					info222:'Recherche de mannequin et de sponsors',
+					info223:'Recherche de salle',
+					info224:'Recherche de thèmes',
+					part23:'<strong>Trésorier au Bureau des élèves :</strong>',
+					info231:'Gestions des paiements des activités et des TOEICS',
+					info232:'Gestion des inscriptions',
+					info233:'Organisateur des soirées du BDE et des activités à lécole.',
+					part24:'<strong>Secrétaire du club "Les Invincus" :</strong>',
+					info241:'Lintérêt du club est de faire découvrir le terroir de la région Pas-de-Calais',
+					info242:'Organisateur dactivités',
+					info243:'Gestion des inscriptions',
+					edu3:'<strong>Classe préparatoire TSI (Technologies et Sciences Industrielles) 2018-2021</strong> - Lycée Marcel Sambat, Sotteville-lès-Rouen (76)',
+					edu4:'<strong>Baccalauréat STIDD (Sciences et Techniques de lIndustries et du Développement Durable) 2018</strong> - Lycée Guy de Maupassant Fécamp (76)',
+					part4:'<strong>Projet darchitecture et construction ::</strong>',
+					info41:'Améliorer lisolation du lycée',
+					info42:'Regarder lisolation du lycée',
+					info43:'Regarder les principales pertes de chaleur',
+					experienceTitle:'Expérience Professionnelle',
+					work1:'<strong>Delpierre Août 2021 (1mois), Été 2019 (2mois) & Été 2023 (3mois) - Saisonnie</strong>',
+					post1:'<strong>Intérimaire:</strong>',
+					act11:'Emballage',
+					act12:'Pesée du hareng',
+					act13:'Ficelage',
+					act14:'Trancheur',
+					work2:'<strong>Radio "Art en sort" Été 2018 (4mois) - Animateur radio bénévole</strong>',
+					post2:'<strong>Chroniqueur sur une radio locale:</strong>',
+					act21:'Lecture des publicités',
+					act22:'Voix des jingles',
+					act23:'Chroniqueur de débat sur les sujets du quotidien',
+					skillsTitle:'Compétences',
+					skill1:'<strong>Langages de Programmation:</strong> HTML, CSS, SQL, C',
+					skill2:'<strong>Construction 3D:</strong> Catia V6, Solidworks',
+					skill3:'Langues:</strong> Français (courant), Anglais (intermédiaire), Italien (débutant)',
+					CITitle:'Centre dintérêt',
+					CI1:'<strong>Jeux de société:</strong>',
+					game1:'Jeu de plateau',
+					game2:'Jeu stratégique',
+					game3:'Seul ou en coopératif',
+					CI2:'<strong>Handball:</strong>',
+					H1:'Pratique en club entre 2012 et 2018',
+					H2:'Poste : pivot',
+					H3:'Arbitre (sans diplôme) sur matchs de district -15ans',
+					
+                },
+                en: {
+
+					educationTitle:'Education',
+					edu1:'<strong>Erasmsus September 2023 - January 2024</strong> - Yasar University',
+					part1:'<strong>Favorite subjects:</strong>',
+					info11:'Linear program',
+					info12:'Probability theory and stochastic processes',
+					info13:'Error and decision support systems',
+					info14:'Current subject in business engineering',
+					edu2:'<strong>Engineering diploma in industrial engineering specialty 2021-2024</strong> - École dIngénieur du Littoral Côté dOpale in Longuenesse (62)',
+					part21:'<strong>Favorite subjects:</strong>',
+					info211:'Rights courses (labour, business and intellectual property)',
+					info212:'Management course (project, team, company)',
+					info213:'Production management course',
+					info214:'Mechanical construction course',
+					part22:'<strong>Completion of a solidarity project:</strong>',
+					info221:'Organization of the fashion show at the Red Cross store "Chez Henry"',
+					info222:'Looking for models and sponsors',
+					info223:'Room search',
+					info224:'Search for themes',
+					part23:'<strong>Treasurer at the Student Union:</strong>',
+					info231:'Management of activity payments and TOEICS',
+					info232:'Registration management',
+					info233:'Organizer of BDE evenings and activities at school.',
+					part24:'<strong>Secretary of the "Les Invincus" club:</strong>',
+					info241:'The interest of the club is to discover the terroir of the Pas-de-Calais region',
+					info242:'Activity organizer',
+					info243:'Registration management',
+					edu3:'<strong>TSI preparatory class (Technologies and Industrial Sciences) 2018-2021</strong> - Lycée Marcel Sambat, Sotteville-lès-Rouen (76)',
+					edu4:'<strong>STIDD Baccalaureate (Science and Techniques of Industry and Sustainable Development) 2018</strong> - Lycée Guy de Maupassant Fécamp (76)',
+					part4:'<strong>Architecture and construction project::</strong>',
+					info41:'Improve high school insulation',
+					info42:'Looking at high school isolation',
+					info43:'Look at the main heat losses',
+					experienceTitle:'Professional Experience',
+					work1:'<strong>Delpierre August 2021 (1 month), Summer 2019 (2 months) & Summer 2023 (3 months) - Season</strong>',
+					post1:'<strong>Interim:</strong>',
+					act11:'Packaging',
+					act12:'Weighing the herring',
+					act13:'Tying up',
+					act14:'Slicer',
+					work2:'<strong>Radio "Art en sorte" Summer 2018 (4 months) - Volunteer radio presenter</strong>',
+					post2:'<strong>Columnist on a local radio:</strong>',
+					act21:'Reading advertisements',
+					act22:'Voice of jingles',
+					act23:'Debate columnist on everyday topics',
+					skillsTitle:'Skills',
+					skill1:'<strong>Programming Languages:</strong> HTML, CSS, SQL, C',
+					skill2:'<strong>3D construction:</strong> Catia V6, Solidworks',
+					skill3:'Languages:</strong>French (fluent), English (intermediate), Italian (beginner)',
+					CITitle:'Center of interest',
+					CI1:'<strong>Board games:</strong>',
+					game1:'Board game',
+					game2:'Strategic game',
+					game3:'Alone or in cooperative',
+					CI2:'<strong>Handball:</strong>',
+					H1:'Club practice between 2012 and 2018',
+					H2:'Position: pivot',
+					H3:'Referee (without diploma) on district matches -15 years old',
+                }
+				
+            };
+
+            // Fonction pour mettre à jour le texte en fonction de la langue sélectionnée
+            function updateText(lang) {
+				document.getElementById('educationTitle').innerHTML = langText[lang].educationTitle;
+				document.getElementById('edu1').innerHTML = langText[lang].edu1;
+				document.getElementById('part1').innerHTML = langText[lang].part1;
+				document.getElementById('info11').innerHTML = langText[lang].info11;
+				document.getElementById('info12').innerHTML = langText[lang].info12;
+				document.getElementById('info13').innerHTML = langText[lang].info13;
+				document.getElementById('info14').innerHTML = langText[lang].info14;
+				document.getElementById('edu2').innerHTML = langText[lang].edu2;
+				document.getElementById('part21').innerHTML = langText[lang].part21;
+				document.getElementById('info211').innerHTML = langText[lang].info211;
+				document.getElementById('info212').innerHTML = langText[lang].info212;
+				document.getElementById('info213').innerHTML = langText[lang].info213.
+				document.getElementById('info214').innerHTML = langText[lang].info214;
+				document.getElementById('part22').innerHTML = langText[lang].part22;
+				document.getElementById('info221').innerHTML = langText[lang].info221;
+				document.getElementById('info222').innerHTML = langText[lang].info222;
+				document.getElementById('info223').innerHTML = langText[lang].info223;
+				document.getElementById('info224').innerHTML = langText[lang].info224;
+				document.getElementById('part23').innerHTML = langText[lang].part23;
+				document.getElementById('info231').innerHTML = langText[lang].info231;
+				document.getElementById('info232').innerHTML = langText[lang].info232;
+				document.getElementById('info233').innerHTML = langText[lang].info233;
+				document.getElementById('part24').innerHTML = langText[lang].part24;
+				document.getElementById('info241').innerHTML = langText[lang].info241;
+				document.getElementById('info242').innerHTML = langText[lang].info242;
+				document.getElementById('info243').innerHTML = langText[lang].info243;
+				document.getElementById('edu3').innerHTML = langText[lang].edu3;
+				document.getElementById('edu4').innerHTML = langText[lang].edu4;
+				document.getElementById('part4').innerHTML = langText[lang].part4;
+				document.getElementById('info41').innerHTML = langText[lang].info41;
+				document.getElementById('info42').innerHTML = langText[lang].info42;
+				document.getElementById('info43').innerHTML = langText[lang].info43;
+				document.getElementById('experienceTitle').innerHTML = langText[lang].experienceTitle;
+				document.getElementById('work1').innerHTML = langText[lang].work1;
+				document.getElementById('post1').innerHTML = langText[lang].post1;
+				document.getElementById('act11').innerHTML = langText[lang].act11;
+				document.getElementById('act12').innerHTML = langText[lang].act12;
+				document.getElementById('act13').innerHTML = langText[lang].act13;
+				document.getElementById('act14').innerHTML = langText[lang].act14;
+				document.getElementById('work2').innerHTML = langText[lang].work2;
+				document.getElementById('post2').innerHTML = langText[lang].post2.
+				document.getElementById('act21').innerHTML = langText[lang].act21;
+				document.getElementById('part22').innerHTML = langText[lang].part22;
+				document.getElementById('act22').innerHTML = langText[lang].act22;
+				document.getElementById('act23').innerHTML = langText[lang].act23;
+				document.getElementById('skillsTitle').innerHTML = langText[lang].skillsTitle;
+				document.getElementById('skill1').innerHTML = langText[lang].skill1;
+				document.getElementById('skill2').innerHTML = langText[lang].skill2;
+				document.getElementById('skill3').innerHTML = langText[lang].skill3;
+				document.getElementById('CITitle').innerHTML = langText[lang].CITitle;
+				document.getElementById('CI1').innerHTML = langText[lang].CI1;
+				document.getElementById('game1').innerHTML = langText[lang].game1;
+				document.getElementById('game2').innerHTML = langText[lang].game2;
+				document.getElementById('game3').innerHTML = langText[lang].game3;
+				document.getElementById('CI2').innerHTML = langText[lang].CI2;
+				document.getElementById('H1').innerHTML = langText[lang].H1;
+				document.getElementById('H2').innerHTML = langText[lang].H2;
+				document.getElementById('H3').innerHTML = langText[lang].H3;
+				
+			}
+
+            // Mettre à jour le texte en fonction de la langue sélectionnée
+            updateText(langSelect);
+        }
+    </script>
+
+
+</body>
+</html>
